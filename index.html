@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"
+        integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" style="--clr: #662d8c;">
+            <span class="text">Element One</span>
+            <i class="ri-menu-line"></i>
+        </div>
+        <div class="item"  style="--clr: #6dd5fa;">
+            <span class="text">Element Two</span>
+            <i class="ri-menu-line"></i>
+        </div>
+        <div class="item" style="--clr: #ed1e79;">
+            <span class="text">Element Three</span>
+            <i class="ri-menu-line"></i>
+        </div>
+        <div class="item" style="--clr: #fc931a;">
+            <span class="text">Element Four</span>
+            <i class="ri-menu-line"></i>
+        </div>
+        <div class="item" style="--clr: #d31027;">
+            <span class="text">Element Five</span>
+            <i class="ri-menu-line"></i>
+        </div>
+        <div class="item" style="--clr: #2cda09;">
+            <span class="text">Element Six</span>
+            <i class="ri-menu-line"></i>
+        </div>
+        <div class="item"  style="--clr: #2980b9;">
+            <span class="text">Element Seven</span>
+            <i class="ri-menu-line"></i>
+        </div>
+    </div>
+
+    <script>
+        const dragArea = document.querySelector('.container')
+        new Sortable(dragArea, {
+        animation: 150
+        })
+    </script>
+</body>
+
+</html>
